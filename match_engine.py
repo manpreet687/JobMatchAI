@@ -97,9 +97,6 @@ Job Description:
 
 # Display results only if resume_text and job_text are defined
 try:
-    # Example variables (remove these in production)
-    # resume_text = "Experienced software engineer skilled in Python and AI."
-    # job_text = "Looking for a backend engineer proficient in Python, Flask, and cloud APIs."
 
     semantic_score = compute_match_score(resume_text, job_text)
     ai_feedback = generate_ai_feedback(resume_text, job_text)
@@ -119,3 +116,4 @@ try:
 
 except NameError:
     pass  # Silently do nothing if resume_text or job_text are not defined
+
